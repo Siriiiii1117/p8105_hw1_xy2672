@@ -38,3 +38,21 @@ Saving the scatterplot:
 ggsave("Weather_scatterplot.png", plot = weather_scatterplot)
 ```
 
+## Problem 2:
+
+Set seed for reproducibility
+```{r}
+set.seed(1234)
+```
+
+Creating the dataframe:
+
+```{r}
+p2_df = tibble(
+  vec_num = rnorm(10),
+  vec_logical_gt0 = vec_num > 0,
+  vec_char = c("a","b","c","d","e","f","g","x","y","z"),
+  vec_factor = factor(c("red","red","red","green","green","green","green","blue","blue","blue"))
+)
+```
+
